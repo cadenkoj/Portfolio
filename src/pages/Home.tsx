@@ -238,7 +238,7 @@ export default function Home() {
             then moved on to <Link href="https://react.dev/">React</Link>, which
             I still use today. One major inspiration to me was{" "}
             <Link href="https://fireship.io/">Fireship</Link>. I enjoyed taking
-            my own spin on tutorial projects.
+            my spin on tutorial projects.
           </Typography>
           <Typography
             sx={{
@@ -246,14 +246,14 @@ export default function Home() {
               textAlign: { xs: "center", md: "left" },
             }}
           >
-            I also have expierience working on bots and other projects that
+            I also have experience working on bots and other projects that
             interact with the{" "}
             <Link href="https://discord.com/developers/docs/intro/">
               Discord API
             </Link>
-            . I have made some person projects, but would love to start shaing
-            my work with others! These projects have extensive moderation
-            features that make use of{" "}
+            . I have made some personal projects, but would love to start
+            sharing my work with others! These projects have extensive
+            moderation features that make use of{" "}
             <Link href="https://cloud.google.com/apis/docs/overview/">
               Google APIs
             </Link>{" "}

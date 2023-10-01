@@ -118,13 +118,12 @@ const technology = [
 export default function Home() {
   return (
     <Box
-      sx={{
-        width: "100%",
-        display: "flex",
-        minHeight: "600px",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
+      width="100%"
+      display="flex"
+      minHeight="100vh"
+      alignItems="center"
+      justifyContent="center"
+      sx={{ paddingX: { xs: 4, lg: 12 } }}
     >
       <Grid
         container
@@ -132,18 +131,18 @@ export default function Home() {
         gap={2}
         maxWidth="1280px"
         sx={{
-          flexWrap: { xs: "wrap", md: "nowrap" },
-          justifyContent: { xs: "center", md: "space-between" },
+          flexWrap: { xs: "wrap", lg: "nowrap" },
+          justifyContent: { xs: "center", lg: "space-between" },
         }}
       >
         <Grid
           item
           xs={12}
-          md={4}
+          lg={4}
           py={6}
           sx={{
             display: "flex",
-            position: { sx: "inherit", md: "sticky" },
+            position: { sx: "inherit", lg: "sticky" },
             top: "0",
             flexDirection: "column",
             maxHeight: "100vh",
@@ -156,7 +155,7 @@ export default function Home() {
               fontWeight={700}
               sx={{
                 paddingBottom: "15px",
-                textAlign: { xs: "center", md: "left" },
+                textAlign: { xs: "center", lg: "left" },
               }}
             >
               Caden
@@ -166,7 +165,7 @@ export default function Home() {
               fontWeight={700}
               sx={{
                 paddingBottom: "15px",
-                textAlign: { xs: "center", md: "left" },
+                textAlign: { xs: "center", lg: "left" },
               }}
             >
               Junior Software Developer
@@ -174,7 +173,7 @@ export default function Home() {
             <Typography
               sx={{
                 paddingBottom: "30px",
-                textAlign: { xs: "center", md: "left" },
+                textAlign: { xs: "center", lg: "left" },
               }}
             >
               I create advanced web-based products and digital experiences.
@@ -186,8 +185,8 @@ export default function Home() {
               spacing={1}
               alignItems="center"
               sx={{
-                justifyContent: { xs: "center", md: "left" },
-                alignItems: { xs: "center", md: "left" },
+                justifyContent: { xs: "center", lg: "left" },
+                alignItems: { xs: "center", lg: "left" },
               }}
             >
               <IconButton
@@ -205,13 +204,13 @@ export default function Home() {
             </Stack>
           </Box>
         </Grid>
-        <Grid item xs={12} md={8} py={6}>
+        <Grid item xs={12} lg={8} py={6}>
           <Typography
             variant="h6"
             fontWeight={700}
             sx={{
               paddingBottom: "15px",
-              textAlign: { xs: "center", md: "left" },
+              textAlign: { xs: "center", lg: "left" },
             }}
           >
             About Me
@@ -219,7 +218,7 @@ export default function Home() {
           <Typography
             sx={{
               paddingBottom: "30px",
-              textAlign: { xs: "center", md: "left" },
+              textAlign: { xs: "center", lg: "left" },
             }}
           >
             A few years back, during the pandemic, I started building simple
@@ -230,7 +229,7 @@ export default function Home() {
           <Typography
             sx={{
               paddingBottom: "30px",
-              textAlign: { xs: "center", md: "left" },
+              textAlign: { xs: "center", lg: "left" },
             }}
           >
             I started the same as many people, with HTML, CSS, and JavaScript. I
@@ -243,7 +242,7 @@ export default function Home() {
           <Typography
             sx={{
               paddingBottom: "30px",
-              textAlign: { xs: "center", md: "left" },
+              textAlign: { xs: "center", lg: "left" },
             }}
           >
             I also have experience working on bots and other projects that
@@ -268,7 +267,7 @@ export default function Home() {
             fontWeight={700}
             sx={{
               paddingBottom: "15px",
-              textAlign: { xs: "center", md: "left" },
+              textAlign: { xs: "center", lg: "left" },
             }}
           >
             Get In Touch
@@ -276,7 +275,7 @@ export default function Home() {
           <Typography
             sx={{
               paddingBottom: "30px",
-              textAlign: { xs: "center", md: "left" },
+              textAlign: { xs: "center", lg: "left" },
             }}
           >
             Want to buy a custom bot, website, or other project? Or just want to
@@ -292,7 +291,7 @@ export default function Home() {
             fontWeight={700}
             sx={{
               paddingBottom: "15px",
-              textAlign: { xs: "center", md: "left" },
+              textAlign: { xs: "center", lg: "left" },
             }}
           >
             Projects
@@ -311,7 +310,7 @@ export default function Home() {
             fontWeight={700}
             sx={{
               paddingBottom: "15px",
-              textAlign: { xs: "center", md: "left" },
+              textAlign: { xs: "center", lg: "left" },
             }}
           >
             Technology

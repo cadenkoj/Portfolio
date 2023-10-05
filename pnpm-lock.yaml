@@ -11,15 +11,9 @@ dependencies:
   '@emotion/styled':
     specifier: ^11.11.0
     version: 11.11.0(@emotion/react@11.11.1)(@types/react@18.2.23)(react@18.2.0)
-  '@fontsource/inter':
-    specifier: ^5.0.8
-    version: 5.0.8
-  '@fontsource/rubik':
+  '@fontsource/raleway':
     specifier: ^5.0.12
     version: 5.0.12
-  '@mui/icons-material':
-    specifier: ^5.14.11
-    version: 5.14.11(@mui/material@5.14.11)(@types/react@18.2.23)(react@18.2.0)
   '@mui/material':
     specifier: ^5.14.11
     version: 5.14.11(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.23)(react-dom@18.2.0)(react@18.2.0)
@@ -522,12 +516,8 @@ packages:
     resolution: {integrity: sha512-qprfWkn82Iw821mcKofJ5Pk9wgioHicxcQMxx+5zt5GSKoqdWvgG5AxVmpmUUjzTLPVSH5auBrhI93Deayn/DA==}
     dev: false
 
-  /@fontsource/inter@5.0.8:
-    resolution: {integrity: sha512-28knWH1BfOiRalfLs90U4sge5mpQ8ZH6FS0PTT+IZMKrZ7wNHDHRuKa1kQJg+uHcc6axBppnxll+HXM4c7zo/Q==}
-    dev: false
-
-  /@fontsource/rubik@5.0.12:
-    resolution: {integrity: sha512-R1Yad0eQ8p0WCuuhRn14Jy5h3/lY1ZUQYxs9f2dzJ7NbfBFWUvBRyAVoxcQu/umWnAUzhuVy9VX8uZfOfVFpGQ==}
+  /@fontsource/raleway@5.0.12:
+    resolution: {integrity: sha512-ozJah4uGPFGVW3mA4V6h7QkHvbrFR1U1HC4mxTL1dvKfs7t1zg11/lUi8g7EyFraoWUmCzrm9b9mUqJBxZ0h/w==}
     dev: false
 
   /@humanwhocodes/config-array@0.11.11:
@@ -575,23 +565,6 @@ packages:
 
   /@mui/core-downloads-tracker@5.14.11:
     resolution: {integrity: sha512-uY8FLQURhXe3f3O4dS5OSGML9KDm9+IE226cBu78jarVIzdQGPlXwGIlSI9VJR8MvZDA6C0+6XfWDhWCHruC5Q==}
-    dev: false
-
-  /@mui/icons-material@5.14.11(@mui/material@5.14.11)(@types/react@18.2.23)(react@18.2.0):
-    resolution: {integrity: sha512-aHReLasBuS/+hhPzbZCgZ0eTcZ2QRnoC2WNK7XvdAf3l+LjC1flzjh6GWw1tZJ5NHnZ+bivdwtLFQ8XTR96JkA==}
-    engines: {node: '>=12.0.0'}
-    peerDependencies:
-      '@mui/material': ^5.0.0
-      '@types/react': ^17.0.0 || ^18.0.0
-      react: ^17.0.0 || ^18.0.0
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-    dependencies:
-      '@babel/runtime': 7.23.1
-      '@mui/material': 5.14.11(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.23)(react-dom@18.2.0)(react@18.2.0)
-      '@types/react': 18.2.23
-      react: 18.2.0
     dev: false
 
   /@mui/material@5.14.11(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.23)(react-dom@18.2.0)(react@18.2.0):

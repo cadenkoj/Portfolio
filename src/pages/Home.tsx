@@ -1,4 +1,3 @@
-import InstagramIcon from "@mui/icons-material/Instagram";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import IconButton from "@mui/material/IconButton";
@@ -24,12 +23,13 @@ import {
   SiVite,
 } from "react-icons/si";
 
-import DiscordIcon from "../components/DiscordIcon.tsx";
-import GitHubRepoCard from "../components/GitHubRepoCard.tsx";
+import Container from "../components/Container.tsx";
+import Mail from "../components/Mail.tsx";
+import RepoCard from "../components/RepoCard.tsx";
 
 const repositories = {
   username: "KojiOdyssey",
-  names: ["Portfolio", "WatchGuard", "Anim-API", "Koex"],
+  names: ["Portfolio", "WatchGuard", "Koex", "Anim-API"],
 };
 
 const technology = [
@@ -117,223 +117,134 @@ const technology = [
 
 export default function Home() {
   return (
-    <Box
-      width="100%"
-      display="flex"
-      minHeight="100vh"
-      alignItems="center"
-      justifyContent="center"
-      sx={{ paddingX: { xs: 4, lg: 12 } }}
-    >
+    <Container>
       <Grid
-        container
-        display="flex"
-        gap={2}
-        maxWidth="1280px"
+        item
+        xs={12}
+        lg={4}
+        py={6}
         sx={{
-          flexWrap: { xs: "wrap", lg: "nowrap" },
-          justifyContent: { xs: "center", lg: "space-between" },
+          display: "flex",
+          position: { sx: "inherit", md: "sticky" },
+          top: "0",
+          flexDirection: "column",
+          maxHeight: "100vh",
+          justifyContent: "space-between",
         }}
       >
-        <Grid
-          item
-          xs={12}
-          lg={4}
-          py={6}
-          sx={{
-            display: "flex",
-            position: { sx: "inherit", lg: "sticky" },
-            top: "0",
-            flexDirection: "column",
-            maxHeight: "100vh",
-            justifyContent: "space-between",
-          }}
-        >
-          <Box>
-            <Typography
-              variant="h3"
-              fontWeight={700}
-              sx={{
-                paddingBottom: "15px",
-                textAlign: { xs: "center", lg: "left" },
-              }}
-            >
-              Caden
-            </Typography>
-            <Typography
-              variant="h6"
-              fontWeight={700}
-              sx={{
-                paddingBottom: "15px",
-                textAlign: { xs: "center", lg: "left" },
-              }}
-            >
-              Junior Software Developer
-            </Typography>
-            <Typography
-              sx={{
-                paddingBottom: "30px",
-                textAlign: { xs: "center", lg: "left" },
-              }}
-            >
-              I create advanced web-based products and digital experiences.
-            </Typography>
-          </Box>
-          <Box>
-            <Stack
-              direction="row"
-              spacing={1}
-              alignItems="center"
-              sx={{
-                justifyContent: { xs: "center", lg: "left" },
-                alignItems: { xs: "center", lg: "left" },
-              }}
-            >
-              <IconButton
-                href="https://instagram.com/caden.koj/"
-                target="_blank"
-              >
-                <InstagramIcon />
-              </IconButton>
-              <IconButton
-                href="https://discord.com/users/1092543812527738911/"
-                target="_blank"
-              >
-                <DiscordIcon />
-              </IconButton>
-            </Stack>
-          </Box>
-        </Grid>
-        <Grid item xs={12} lg={8} py={6}>
+        <Box>
           <Typography
-            variant="h6"
+            variant="h3"
             fontWeight={700}
-            sx={{
-              paddingBottom: "15px",
-              textAlign: { xs: "center", lg: "left" },
-            }}
+            sx={{ textAlign: { xs: "center", md: "left" } }}
+            gutterBottom
           >
-            About Me
-          </Typography>
-          <Typography
-            sx={{
-              paddingBottom: "30px",
-              textAlign: { xs: "center", lg: "left" },
-            }}
-          >
-            A few years back, during the pandemic, I started building simple
-            websites, just for fun. I instantly realized that I loved being able
-            to bring my ideas to life through code. I've been making frontend,
-            backend, and a large variety of miscellaneous projects ever since.
-          </Typography>
-          <Typography
-            sx={{
-              paddingBottom: "30px",
-              textAlign: { xs: "center", lg: "left" },
-            }}
-          >
-            I started the same as many people, with HTML, CSS, and JavaScript. I
-            loved watching videos and learning more about in-depth concepts. I
-            then moved on to <Link href="https://react.dev/">React</Link>, which
-            I still use today. One major inspiration to me was{" "}
-            <Link href="https://fireship.io/">Fireship</Link>. I enjoyed taking
-            my spin on tutorial projects.
-          </Typography>
-          <Typography
-            sx={{
-              paddingBottom: "30px",
-              textAlign: { xs: "center", lg: "left" },
-            }}
-          >
-            I also have experience working on bots and other projects that
-            interact with the{" "}
-            <Link href="https://discord.com/developers/docs/intro/">
-              Discord API
-            </Link>
-            . I have made some personal projects, but would love to start
-            sharing my work with others! These projects have extensive
-            moderation features that make use of{" "}
-            <Link href="https://cloud.google.com/apis/docs/overview/">
-              Google APIs
-            </Link>{" "}
-            like{" "}
-            <Link href="https://safebrowsing.google.com/">
-              Google Safe Browsing
-            </Link>{" "}
-            and <Link href="https://perspectiveapi.com/">Perspective API</Link>.
+            Caden
           </Typography>
           <Typography
             variant="h6"
-            fontWeight={700}
-            sx={{
-              paddingBottom: "15px",
-              textAlign: { xs: "center", lg: "left" },
-            }}
+            sx={{ textAlign: { xs: "center", md: "left" } }}
+            gutterBottom
           >
-            Get In Touch
+            Software Developer
           </Typography>
+          <Typography sx={{ textAlign: { xs: "center", md: "left" } }}>
+            I create advanced web-based products and digital experiences.
+          </Typography>
+        </Box>
+        <Box sx={{ display: { xs: "none", md: "block" } }}>
           <Typography
-            sx={{
-              paddingBottom: "30px",
-              textAlign: { xs: "center", lg: "left" },
-            }}
-          >
-            Want to buy a custom bot, website, or other project? Or just want to
-            chat? Feel free to contact me on{" "}
-            <Link href="https://instagram.com/caden.koj/">Instagram</Link> or{" "}
-            <Link href="https://discord.com/users/1092543812527738911/">
-              Discord
-            </Link>{" "}
-            → <b>@caden.koj</b>
-          </Typography>
-          <Typography
-            variant="h6"
+            fontFamily="monospace"
             fontWeight={700}
-            sx={{
-              paddingBottom: "15px",
-              textAlign: { xs: "center", lg: "left" },
-            }}
+            sx={{ paddingBottom: "30px" }}
           >
-            Projects
+            © Caden 2023
           </Typography>
-          <Stack direction="column" spacing={1}>
-            {repositories.names.map((repoName) => (
-              <GitHubRepoCard
-                username={repositories.username}
-                repoName={repoName}
-              />
-            ))}
-          </Stack>
-          <br />
-          <Typography
-            variant="h6"
-            fontWeight={700}
-            sx={{
-              paddingBottom: "15px",
-              textAlign: { xs: "center", lg: "left" },
-            }}
-          >
-            Technology
-          </Typography>
-          <Grid container spacing={2}>
+          <Grid container spacing={1}>
             {technology.map(({ name, url, Icon }) => (
-              <Grid item key={name} xs={3} md={1.5}>
-                <Grid
-                  item
-                  display="flex"
-                  alignItems="center"
-                  justifyContent="center"
-                  textAlign="center"
-                >
-                  <IconButton href={url} target="_blank">
+              <Grid item key={name} xs={1.5}>
+                <Grid item display="flex" justifyContent="flex">
+                  <IconButton href={url} target="_blank" size="small">
                     <Icon />
                   </IconButton>
                 </Grid>
               </Grid>
             ))}
           </Grid>
-        </Grid>
+        </Box>
       </Grid>
-    </Box>
+      <Grid item xs={12} lg={8} py={6}>
+        <Typography
+          variant="h6"
+          sx={{ textAlign: { xs: "center", md: "left" } }}
+          gutterBottom
+        >
+          About Me
+        </Typography>
+        <Typography textAlign="justify" pb={4}>
+          A few years ago, just before the pandemic, I started building simple
+          websites for fun. I instantly realized that I loved being able to
+          bring my concepts to life through code. Ever since, I've been making
+          frontend, backend, and a large variety of other projects.
+        </Typography>
+        <Typography textAlign="justify" pb={4}>
+          I started the same as many people, with HTML, CSS, and JavaScript. I
+          loved watching videos and learning more about in-depth concepts to
+          improve my projects. Then, I moved on to{" "}
+          <Link href="https://nodejs.org/">Node.js</Link>, and frameworks like{" "}
+          <Link href="https://react.dev/">React</Link>, which I still use today.
+          One major inspiration to me was{" "}
+          <Link href="https://fireship.io/">Fireship</Link>. I enjoyed taking my
+          spin on tutorial projects, while making them my own.
+        </Typography>
+        <Typography textAlign="justify" pb={4}>
+          I also have experience working on applications that interact with the{" "}
+          <Link href="https://discord.com/developers/docs/intro/">
+            Discord API
+          </Link>
+          . I have created some personal projects, but would love to start
+          sharing my work with others! These projects have extensive moderation
+          features that make use of APIs like{" "}
+          <Link href="https://safebrowsing.google.com/">
+            Google Safe Browsing
+          </Link>{" "}
+          and <Link href="https://perspectiveapi.com/">Perspective API</Link>.
+        </Typography>
+        <Typography
+          variant="h6"
+          sx={{ textAlign: { xs: "center", md: "left" } }}
+          gutterBottom
+        >
+          Projects
+        </Typography>
+        <Stack direction="column" spacing={1}>
+          {repositories.names.map((repoName) => (
+            <RepoCard username={repositories.username} repoName={repoName} />
+          ))}
+        </Stack>
+        <br />
+        <Mail />
+        <Box sx={{ display: { xs: "block", md: "none" } }}>
+          <br />
+          <Typography
+            fontFamily="monospace"
+            fontWeight={700}
+            textAlign="center"
+            sx={{ paddingBottom: "30px" }}
+          >
+            © Caden 2023
+          </Typography>
+          <Grid container spacing={1}>
+            {technology.map(({ name, url, Icon }) => (
+              <Grid item key={name} xs={1.5} textAlign="center">
+                <IconButton href={url} target="_blank" size="small">
+                  <Icon />
+                </IconButton>
+              </Grid>
+            ))}
+          </Grid>
+        </Box>
+      </Grid>
+    </Container>
   );
 }

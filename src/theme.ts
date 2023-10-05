@@ -1,22 +1,25 @@
-import "@fontsource/inter";
-
 import { ThemeOptions, createTheme } from "@mui/material/styles";
 
 const baseTheme = {
   typography: {
-    fontFamily: ["Inter", "sans-serif"].join(","),
+    fontFamily: "Raleway, sans-serif",
+    fontSize: 16,
   },
   palette: {
     mode: "dark",
-    primary: { main: "#4f9cff" },
-    secondary: { main: "#0d1d33" },
+    primary: { main: "#366aeb" },
+    secondary: { main: "#adbadb" },
     background: {
-      default: "#0d1d33",
-      paper: "#0d1d33",
+      default: "#12192b",
+      paper: "#12192b",
+    },
+    text: {
+      primary: "#e0e9ff",
+      secondary: "#adbadb",
     },
   },
   shape: {
-    borderRadius: 12,
+    borderRadius: 16,
   },
   zIndex: {
     mobileStepper: 1000,
@@ -35,50 +38,21 @@ const componentOverrides: Pick<ThemeOptions, "components"> = {
     MuiCssBaseline: {
       styleOverrides: {
         "::selection": {
-          backgroundColor: "#4f9cff50",
+          backgroundColor: "#366aeb50",
           color: "initial",
         },
         body: {
           overflowY: "scroll",
           "&::-webkit-scrollbar, & *::-webkit-scrollbar": {
-            backgroundColor: "#0d1d33",
+            backgroundColor: "#12192b",
           },
           "&::-webkit-scrollbar-thumb, & *::-webkit-scrollbar-thumb": {
             borderRadius: 8,
-            backgroundColor: "#4f9cff10",
+            backgroundColor: "#366aeb25",
             minHeight: 24,
-            border: "3px solid #0d1d33",
+            border: "3px solid #12192b",
           },
         },
-      },
-    },
-    MuiBackdrop: {
-      styleOverrides: {
-        root: {
-          zIndex: baseTheme.zIndex.drawer + 1,
-        },
-      },
-    },
-    MuiDivider: {
-      styleOverrides: {
-        root: {
-          width: "80%",
-          margin: "0 auto",
-        },
-      },
-    },
-    MuiCardHeader: {
-      styleOverrides: {
-        title: {
-          fontWeight: 700,
-          letterSpacing: ".3rem",
-        },
-      },
-    },
-    MuiMenu: {
-      defaultProps: {
-        elevation: 1,
-        keepMounted: true,
       },
     },
     MuiLink: {
@@ -87,10 +61,28 @@ const componentOverrides: Pick<ThemeOptions, "components"> = {
         rel: "noopener noreferrer",
       },
     },
-    MuiButtonBase: {
+    MuiMenu: {
       defaultProps: {
-        rel: "noopener noreferrer",
+        elevation: 1,
+        keepMounted: true,
       },
+    },
+    MuiTypography: {
+      styleOverrides: {
+        h6: {
+          textTransform: "uppercase",
+          fontWeight: 700,
+        },
+        body1: {
+          color: baseTheme.palette.text.secondary,
+        },
+      },
+    },
+    MuiButtonBase: {
+      defaultProps: { rel: "noopener noreferrer" },
+    },
+    MuiIconButton: {
+      defaultProps: { color: "secondary" },
     },
   },
 };

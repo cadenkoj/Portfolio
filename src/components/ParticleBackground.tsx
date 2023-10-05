@@ -18,8 +18,28 @@ export default function ParticleBackground() {
       init={particlesInit}
       options={{
         fpsLimit: 120,
+        fullScreen: {
+          enable: true,
+          zIndex: -1,
+        },
         interactivity: {
+          events: {
+            onHover: {
+              enable: true,
+              mode: "grab",
+              parallax: {
+                enable: true,
+                force: 60,
+              },
+            },
+          },
           modes: {
+            grab: {
+              distance: 200,
+              links: {
+                opacity: 0,
+              },
+            },
             push: {
               quantity: 4,
             },
@@ -47,7 +67,7 @@ export default function ParticleBackground() {
               default: "bounce",
             },
             random: false,
-            speed: 0.5,
+            speed: 0.25,
             straight: false,
           },
           number: {
@@ -58,10 +78,10 @@ export default function ParticleBackground() {
             value: 80,
           },
           shape: {
-            type: "none",
+            type: "circle",
           },
           size: {
-            value: { min: 1, max: 5 },
+            value: 1,
           },
         },
         detectRetina: true,

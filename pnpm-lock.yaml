@@ -12,8 +12,8 @@ dependencies:
     specifier: ^11.11.0
     version: 11.11.0(@emotion/react@11.11.1)(@types/react@18.2.23)(react@18.2.0)
   '@fontsource/raleway':
-    specifier: ^5.0.13
-    version: 5.0.13
+    specifier: ^5.0.12
+    version: 5.0.12
   '@mui/material':
     specifier: ^5.14.11
     version: 5.14.11(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.23)(react-dom@18.2.0)(react@18.2.0)
